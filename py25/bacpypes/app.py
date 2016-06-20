@@ -96,7 +96,7 @@ class LocalDeviceObject(DeviceObject, Logging):
     defaultProperties = \
         { 'maxApduLengthAccepted': 1024
         , 'segmentationSupported': 'segmentedBoth'
-        , 'maxSegmentsAccepted': 16
+        , 'maxSegmentsAccepted': 2
         , 'apduSegmentTimeout': 20000
         , 'apduTimeout': 3000
         , 'numberOfApduRetries': 3
@@ -712,4 +712,3 @@ class BIPNetworkApplication(NetworkServiceElement, Logging):
 
         # bind the NSAP to the stack, no network number
         self.nsap.bind(self.bip)
-
